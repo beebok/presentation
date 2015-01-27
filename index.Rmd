@@ -25,6 +25,7 @@ data<-read.csv("BC_WA_OR_CA_sardine_data.csv")
 M1 <- gvisGeoChart(data, locationvar="Country", 
                  colorvar="Number_Active_Vessels",)
 print(M1, tag='chart')
+M1$show(cdn = TRUE)
 ```
 
 --- &interactive
